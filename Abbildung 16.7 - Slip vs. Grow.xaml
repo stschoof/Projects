@@ -1,0 +1,57 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Margin="80"
+    >
+<Page.Resources>
+  <Style TargetType="TextBlock">
+    <Setter Property="FontSize" Value="13"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="HorizontalAlignment" Value="Right"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="Margin" Value="5"/>
+  </Style>
+</Page.Resources>
+<Grid Width="250" Height="220">
+ <Grid.RowDefinitions>
+  <RowDefinition/>
+  <RowDefinition/>
+ </Grid.RowDefinitions>
+ <Grid.ColumnDefinitions>
+  <ColumnDefinition Width="Auto"/>
+  <ColumnDefinition Width="Auto"/>
+ </Grid.ColumnDefinitions>
+ <TextBlock Text="Slip"/>
+ <Grid Grid.Column="1" Width="150" Height="100" Background="Black">
+   <Grid.Triggers>
+    <EventTrigger RoutedEvent="Grid.Loaded">
+      <BeginStoryboard>
+        <Storyboard SlipBehavior="Slip">
+          <DoubleAnimation Storyboard.TargetProperty="Opacity"
+            Storyboard.TargetName="mediaSlip" To="1" Duration="0:0:3"/>
+          <MediaTimeline Source="http://www.thomasclaudiushuber.com/thomasOnBoard.wmv" Storyboard.TargetName="mediaSlip"/>
+      </Storyboard>
+    </BeginStoryboard>
+  </EventTrigger>
+  </Grid.Triggers>
+  <MediaElement x:Name="mediaSlip" Stretch="Fill" Opacity="0"/>
+  </Grid>
+  
+ <TextBlock Text="Grow" Grid.Row="1"/>
+ <Grid Width="150" Height="100" Background="Black" Grid.Row="1" Grid.Column="1">
+   <Grid.Triggers>
+    <EventTrigger RoutedEvent="Grid.Loaded">
+      <BeginStoryboard>
+        <Storyboard SlipBehavior="Grow">
+          <DoubleAnimation Storyboard.TargetProperty="Opacity"
+            Storyboard.TargetName="mediaGrow" To="1" Duration="0:0:3"/>
+          <MediaTimeline Source="http://www.thomasclaudiushuber.com/thomasOnBoard.wmv" Storyboard.TargetName="mediaGrow"/>
+      </Storyboard>
+    </BeginStoryboard>
+  </EventTrigger>
+  </Grid.Triggers>
+  <MediaElement x:Name="mediaGrow" Stretch="Fill" Opacity="0"/>
+  </Grid>
+  
+</Grid>
+
+</Page>

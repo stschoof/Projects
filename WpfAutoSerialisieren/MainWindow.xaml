@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfAutoSerialisieren.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAutoSerialisieren"
+        mc:Ignorable="d"
+        Title="Speicher O Mat 2000" Height="379.447" Width="634.375" Loaded="WindowLoad">
+    <Grid>
+        <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbBJ" HorizontalAlignment="Left" Height="23" Margin="170,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.254,2.005"/>
+        <TextBox x:Name="tbKM" HorizontalAlignment="Left" Height="23" Margin="319,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Baujahr" HorizontalAlignment="Left" Margin="170,15,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="KM" HorizontalAlignment="Left" Margin="319,18,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbLeist" HorizontalAlignment="Left" Height="23" Margin="479,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label3" Content="Leistung" HorizontalAlignment="Left" Margin="479,18,0,0" VerticalAlignment="Top" Width="120"/>
+        <RichTextBox x:Name="rtbAnzeige" HorizontalAlignment="Left" Height="214" Margin="10,124,0,0" VerticalAlignment="Top" Width="606">
+            <FlowDocument/>
+        </RichTextBox>
+        <Button x:Name="btnEingabe" Content="Eingabe" HorizontalAlignment="Left" Margin="18,78,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="btnSpeichern" Content="Speichern" HorizontalAlignment="Left" Margin="119,78,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="btnLaden" Content="Laden" HorizontalAlignment="Left" Margin="229,78,0,0" VerticalAlignment="Top" Width="75" Click="btnLaden_Click"/>
+        <Button x:Name="btnLöschen" Content="Ausgabe Löschen&#xD;&#xA;" HorizontalAlignment="Left" Margin="461,78,0,0" VerticalAlignment="Top" Width="138" Click="btnLöschen_Click" Height="20"/>
+
+    </Grid>
+</Window>

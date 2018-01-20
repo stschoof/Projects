@@ -1,0 +1,50 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Margin="10"
+    >
+  <Page.Resources>
+    <Style TargetType="Border">
+      <Setter Property="BorderBrush" Value="Black"/>
+      <Setter Property="BorderThickness" Value="2"/>
+    </Style>
+    <Style TargetType="TextBlock">
+      <Setter Property="HorizontalAlignment" Value="Center"/>
+      <Setter Property="VerticalAlignment" Value="Bottom"/>
+      <Setter Property="Margin" Value="0 10 0 2"/>
+      <Setter Property="FontSize" Value="13"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+  </Page.Resources>
+  <Grid Width="500" Height="460">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+
+    <TextBlock Text="None"/>
+    <Border Grid.Row="1" Width="150" Height="200">
+      <MediaElement Stretch="None" Source="thomasOnBoard.wmv"/>
+    </Border>
+
+    <TextBlock Text="Fill" Grid.Column="1"/>
+    <Border Grid.Row="1" Grid.Column="1" Width="150" Height="200">
+      <MediaElement Stretch="Fill" Source="thomasOnBoard.wmv"/>
+    </Border>
+
+    <TextBlock Text="Uniform (default)"  Grid.Row="2"/>
+    <Border Grid.Row="3" Width="150" Height="200">
+      <MediaElement Stretch="Uniform"  Source="thomasOnBoard.wmv"/>
+    </Border>
+
+    <TextBlock Text="UniformToFill" Grid.Row="2" Grid.Column="1"/>
+    <Border Grid.Row="3" Grid.Column="1" Width="150" Height="200">
+      <MediaElement Stretch="UniformToFill" Source="thomasOnBoard.wmv"/>
+    </Border>
+  </Grid>
+</Page>

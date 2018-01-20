@@ -1,0 +1,23 @@
+﻿<Window x:Class="Bsp_01_RadioButton_StEl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Background="Yellow">
+        <RadioButton GroupName="Os" Content="Windows 7"
+                     IsChecked="{Binding Windows7}" />
+        <RadioButton GroupName="Os" Content="Windows 8"
+                     IsChecked="{Binding Windows8}" />
+        <RadioButton GroupName="Os" Content="Windows 10"
+                     IsChecked="{Binding Windows10}" />
+        <Image Source="trennlinie5.png" Height="20" 
+               HorizontalAlignment="Left" />
+        <RadioButton GroupName="Office" Content="MS Office 2010"
+                     IsChecked="{Binding Office2010}" />
+        <RadioButton GroupName="Office" Content="MS Office 2013"
+                     IsChecked="{Binding Office2013}" />
+        <RadioButton GroupName="Office" Content="MS Office 2016"
+                     IsChecked="{Binding Office2016}" />
+        <Button x:Name="bt" Content="Zusammen" Background="Lime"
+                Click="bt_Click" />
+    </StackPanel>
+</Window>

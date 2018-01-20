@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WunschListeWpfApp", "WunschListeWpfApp\WunschListeWpfApp.csproj", "{F948B12A-8CC0-42BB-8A62-45581E83F3FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F948B12A-8CC0-42BB-8A62-45581E83F3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F948B12A-8CC0-42BB-8A62-45581E83F3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F948B12A-8CC0-42BB-8A62-45581E83F3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F948B12A-8CC0-42BB-8A62-45581E83F3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA0FFE78-356A-41CF-B3C3-2F685B09E047}
+	EndGlobalSection
+EndGlobal

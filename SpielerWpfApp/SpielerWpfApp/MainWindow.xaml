@@ -1,0 +1,34 @@
+﻿<Window x:Class="SpielerWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpielerWpfApp"
+        mc:Ignorable="d"
+        Title="Spieler O Mat" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid Name="griddi">
+        <Image x:Name="Spieler_png" Height="40" Width="40" Source="Spieler.png" Margin="232,95,245,184"/>
+        <Image x:Name="Spieler1_png" Height="40" Width="40" Source="Spieler.png" Margin="158,95,319,184"/>
+        <Image x:Name="Spieler2_png" Height="40" Width="40" Source="Spieler.png" Margin="81,95,396,184"/>
+        <Image x:Name="Spieler3_png" Height="40" Width="40" Source="Spieler.png" Margin="10,95,467,184"/>
+        <Image x:Name="Spieler4_png" Height="40" Width="40" Source="Spieler.png" Margin="422,10,55,269"/>
+        <Image x:Name="Spieler5_png" Height="40" Width="40" Source="Spieler.png" Margin="356,10,121,269"/>
+        <Image x:Name="Spieler6_png" Height="40" Width="40" Source="Spieler.png" Margin="293,10,184,269"/>
+        <Image x:Name="Spieler7_png" Height="40" Width="40" Source="Spieler.png" Margin="224,10,253,269"/>
+        <Image x:Name="Spieler8_png" Height="40" Width="40" Source="Spieler.png" Margin="158,10,319,269"/>
+        <Image x:Name="Spieler9_png" Height="40" Width="40" Source="Spieler.png" Margin="81,10,396,269"/>
+        <Image x:Name="Spieler10_png" Height="40" Width="40" Source="Spieler.png" Margin="10,10,467,269"/>
+        <Label x:Name="labspieler0" Content="Label" HorizontalAlignment="Left" Margin="12,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler1" Content="Label" HorizontalAlignment="Left" Margin="81,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler2" Content="Label" HorizontalAlignment="Left" Margin="158,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler3" Content="Label" HorizontalAlignment="Left" Margin="224,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.209,0.535"/>
+        <Label x:Name="labspieler4" Content="Label" HorizontalAlignment="Left" Margin="293,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler5" Content="Label" HorizontalAlignment="Left" Margin="358,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler6" Content="Label" HorizontalAlignment="Left" Margin="422,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.047,0.235"/>
+        <Label x:Name="labspieler7" Content="Label" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.443,0.702"/>
+        <Label x:Name="labspieler8" Content="Label" HorizontalAlignment="Left" Margin="81,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler9" Content="Label" HorizontalAlignment="Left" Margin="158,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labspieler10" Content="Label" HorizontalAlignment="Left" Margin="232,140,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

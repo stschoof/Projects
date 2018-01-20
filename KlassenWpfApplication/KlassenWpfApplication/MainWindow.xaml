@@ -1,0 +1,15 @@
+﻿<Window x:Class="KlassenWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlassenWpfApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" Loaded="Window_Loaded">
+    
+<Canvas Name="raumdarstellung" Height="400" Width="600">
+        <Button Name="b1" Canvas.Bottom="0" Click="b1_Click">Start</Button>
+        <TextBox Name="anzahl" Height="20" Width="50" Canvas.Bottom="30"></TextBox>
+        
+    </Canvas>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="BindingCodeBehindWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="tbText" HorizontalAlignment="Left" Height="23" Margin="29,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="453" Text="{Binding ElementName=satz, Mode=OneWay,Path=content}"/>
+
+    </Grid>
+</Window>

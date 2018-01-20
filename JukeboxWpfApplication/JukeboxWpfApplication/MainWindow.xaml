@@ -1,0 +1,36 @@
+﻿<Window x:Class="JukeBoxWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Juke O Box 2000" Height="480" Width="525">
+    <StackPanel>
+        <TabControl Height="100" Width="400" Margin="58,41,59,179">
+            <TabItem  Header="Klassik" Background="Beige">
+                <StackPanel>
+                    <RadioButton GroupName="Klassik" Name ="rbKLied1" Content="Hier ähhh neunte und so" Checked="RadioButton_Checked" Tag="9th_Symphony_Finale_by_Beethoven.mp3"></RadioButton>
+                    <RadioButton GroupName="Klassik" Name ="rbKLied2" Content="Klassik2" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton GroupName="Klassik" Name ="rbKLied3" Content="Klassik3" Checked="RadioButton_Checked"></RadioButton>
+                </StackPanel>
+                
+            </TabItem>
+            <TabItem Header="Metall" Background="LightBlue">
+                <StackPanel>
+                    <RadioButton GroupName="Metall" Name ="rbMLied1" Content="Behind Closed Doors" Checked="RadioButton_Checked" Tag="Behind_Closed_Doors.mp3"/>
+                    <RadioButton GroupName="Metall" Name ="rbMLied2" Content="Metall2" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton GroupName="Metall" Name ="rbMLied3" Content="Metall3" Checked="RadioButton_Checked"></RadioButton>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Rock" Background="LightCoral">
+                <StackPanel>
+                    <RadioButton GroupName="Rock" Name ="rbRLied1" Content="Gearhead" Checked="RadioButton_Checked" Tag="Gearhead.mp3"></RadioButton>
+                    <RadioButton GroupName="Rock" Name ="rbRLied2" Content="Shaft" Checked="RadioButton_Checked" Tag="shaft_original.mid"></RadioButton>
+                    <RadioButton GroupName="Rock" Name ="rbRLied3" Content="Rock3" Checked="RadioButton_Checked"></RadioButton>
+                </StackPanel>
+            </TabItem>
+            
+        </TabControl>
+        <Button x:Name="btnAbspielen" Content="Play" Width="75" Click="btnAbspielen_Click"/>
+        <Button x:Name="btnStop" Content="Stop" Width="75" Click="btnStop_Click"/>
+        <Button x:Name="btnPause" Content="Pause" Width="75" Click="btnPause_Click"/>
+        <Button x:Name="btnResume" Content="Resume" Width="75" Click="btnResume_Click"/>
+    </StackPanel>
+</Window>

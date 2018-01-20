@@ -1,0 +1,17 @@
+﻿<Window x:Class="WortZaehlenWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WortZaehlenWpfApp"
+        mc:Ignorable="d"
+        Title="Wort zaehl O mat " Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="eingabeFeld" HorizontalAlignment="Left" Height="23" Margin="30,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" TargetUpdated="eingabeFeld_TargetUpdated"/>
+        <Label x:Name="anzahlDerZeichen" Content="Anzahl der Zeichen :" HorizontalAlignment="Left" Margin="30,79,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label x:Name="zeichen" Content="0" HorizontalAlignment="Left" Margin="154,79,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label x:Name="anzahlDerWorte" Content="Anzahl der Worte :" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label x:Name="worte" Content="0" HorizontalAlignment="Left" Margin="154,110,0,0" VerticalAlignment="Top" Width="67"/>
+
+    </Grid>
+</Window>

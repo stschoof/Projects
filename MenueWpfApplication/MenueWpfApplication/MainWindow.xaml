@@ -1,0 +1,16 @@
+﻿<Window x:Class="MenueWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Name="Griddi">
+        <Menu HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="517">
+
+            <MenuItem Header="Datei" Click="MenuItem_Click" />
+            <MenuItem Header="Bearbeiten" Click="MenuItem_Click_1"/>
+            <MenuItem Header="Ansicht" Click="MenuItem_Click_2"/>
+
+        </Menu>
+    </StackPanel>
+            
+    
+</Window>

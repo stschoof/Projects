@@ -1,0 +1,9 @@
+﻿<Application x:Class="Bsp_02_CheckBox_ToggleButon_StEl.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Bsp_02_CheckBox_ToggleButon_StEl"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

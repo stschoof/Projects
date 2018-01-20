@@ -1,0 +1,15 @@
+﻿<Window x:Class="SoundInXAML.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="SoundPlayerAction in Aktion" Height="100" Width="300">
+	<Button Width="100" Height="23" Content="Sound-Button">
+		<Button.Triggers>
+			<EventTrigger RoutedEvent="Button.MouseEnter">
+				<SoundPlayerAction Source="GAkkord.wav"/>
+			</EventTrigger>
+			<EventTrigger RoutedEvent="Button.Click">
+				<SoundPlayerAction Source="Gitarrensound.wav"/>
+			</EventTrigger>
+		</Button.Triggers>
+	</Button>
+</Window>
